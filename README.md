@@ -9,7 +9,8 @@ Code might appear to be piles of spaghetti bullshit. Works perfectly on MacOS, i
 ```sh
 $ git clone https://github.com/mnk400/rocketnani.git
 $ cd rocketnani
-$ make install
+$ make
+$ sudo make install
 ```
 
 to uninstall
