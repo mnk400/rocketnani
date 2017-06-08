@@ -1,21 +1,16 @@
 SRC = rc.c
 
-BINAME = rocketnani
-PREFIX ?= /usr/local
-INSTALLPATH = ${DESTDIR}${PREFIX}/bin
-
 rocketnani : ${SRC}
 
 	@echo "building ${SRC}"
-	gcc ${SRC} -o ${BINAME}
+	gcc rc.c -o rocketnani
 
-install : ${BINAME}
+install :
 
-	@echo "installing rocketnani file to ${INSTALLPATH}/${BINAME}"
-	@mkdir -p ${INSTALLPATH}
-	@cp ${BINAME} ${INSTALLPATH}
+	@echo "installing rocketnani file to /usr/local/bin"
+	@cp rocketnani /usr/local/bin
 
 uninstall :
 
-	@echo "uninstalling binary file (${INSTALLPATH})"
-	@rm -f ${INSTALLPATH}/${BINAME}
+	@echo "uninstalling binary file /usr/local/bin"
+	@rm -f /usr/local/bin/rocketnani
