@@ -55,7 +55,7 @@ int main()
   //  printf("%s", columns/2 + string rocket);
     //printf("%s",rocket);
     int j = 300000;
-    for (int i = 0; i < win.ws_row; i++) {
+    for ( i = 0; i < win.ws_row; i++) {
         usleep(j);
         j = (int)(j * 0.9);
         printf("\n");
