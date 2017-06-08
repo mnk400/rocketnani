@@ -46,7 +46,7 @@ int main()
       //printf("%d\n",stringLength[i]);
     }
     //printf("%*s\n", columns / 2 + stringLength, string );
-    for (i = 0; i < win.ws_row; i ++)
+    for (i = 0; i < win.ws_col; i ++)
     printf("\n");
     for (i = 0; i < 12; i ++)
     {
@@ -57,7 +57,7 @@ int main()
     int j = 300000;
     for (int i = 0; i < win.ws_row; i++) {
         usleep(j);
-        j = (int)(j * 0.3);
+        j = (int)(j * 0.9);
         printf("\n");
     }
     return 0;
