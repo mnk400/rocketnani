@@ -1,10 +1,18 @@
-# Tiny Projects
-This Repository consist of tiny code written by me just for fun.
-Consists of the following stuff right now,
+
 ### Rocketnani
 Coded in C, launches a rocket on your terminal when you run it!
 ![](https://github.com/mnk400/TinyProjects/blob/master/rocketani/Rocketani.gif)
 
 
-Some code might literally appear to be piles of spaghetti bullshit,
-I'll be updating this repository when I find time.
+Code might appear to be piles of spaghetti bullshit. Works on perfectly MacOS, if it doesn't work on linux then either tell me to fix it or fork it and do it yourself.
+
+```sh
+$ git clone https://github.com/mnk400/rocketnani.git
+$ cd rocketnani
+$ make install
+```
+
+to uninstall
+```sh
+$ make uninstall
+```
