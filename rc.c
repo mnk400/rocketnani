@@ -52,7 +52,7 @@ int main()
     {
       printf("%*s", columns/2 + stringLength[i] - 4, rocket[i]);
     }
-  //  printf("%s", columns/2 + string rocket);
+    //printf("%s", columns/2 + string rocket);
     //printf("%s",rocket);
     int j = 300000;
     for ( i = 0; i < win.ws_row; i++) {
