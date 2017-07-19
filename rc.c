@@ -40,7 +40,7 @@ int main()
     struct winsize win;    //struct winsize to get the window's width and height.
     ioctl(0, TIOCGWINSZ, &win);
     int columns = win.ws_col;
-    int stringLength[12],i;
+    int stringLength[12],i,j=300000;
 
     for(i = 0; i < 12; i ++)
     {
@@ -54,7 +54,6 @@ int main()
         printf("%*s", columns/2 + stringLength[i] - 4, rocket[i]);
     }
     
-    int j = 300000;
     for ( i = 0; i < win.ws_row; i++) 
     {
         usleep(j);
