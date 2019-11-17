@@ -57,7 +57,7 @@ int main()
     for ( i = 0; i < win.ws_row; i++) 
     {
         usleep(j);
-        j = (int)(j * 0.9);
+        j = (int)(j * 0.92);
         printf("\n");
     }
 
